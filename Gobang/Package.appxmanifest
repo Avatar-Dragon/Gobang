@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
+  <Identity Name="88edc0b5-1fe1-4dbf-8654-c9ac3277b2d7" Publisher="CN=Li-Dr_000" Version="1.0.0.0" />
+  <mp:PhoneIdentity PhoneProductId="85edc0b5-1fe1-4dbf-8654-c9ac3277b2d7" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Properties>
+    <DisplayName>Gobang</DisplayName>
+    <PublisherDisplayName>Li-Dr_000</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.0.0" MaxVersionTested="10.0.0.0" />
+  </Dependencies>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="Gobang.App">
+      <uap:VisualElements DisplayName="Gobang" Square150x150Logo="Assets\block.jpg" Square44x44Logo="Assets\block.jpg" Description="Gobang" BackgroundColor="transparent">
+        <uap:DefaultTile Wide310x150Logo="Assets\block.jpg" ShortName="GoBang" Square310x310Logo="Assets\block.jpg" Square71x71Logo="Assets\block.jpg">
+          <uap:ShowNameOnTiles>
+            <uap:ShowOn Tile="square150x150Logo" />
+            <uap:ShowOn Tile="wide310x150Logo" />
+            <uap:ShowOn Tile="square310x310Logo" />
+          </uap:ShowNameOnTiles>
+        </uap:DefaultTile>
+        <uap:SplashScreen Image="Assets\mystartLogo.png" BackgroundColor="white" />
+      </uap:VisualElements>
+      <Extensions>
+        <uap:Extension Category="windows.shareTarget">
+          <uap:ShareTarget>
+            <uap:DataFormat>Text</uap:DataFormat>
+            <uap:DataFormat>Bitmap</uap:DataFormat>
+            <uap:DataFormat>StorageItems</uap:DataFormat>
+          </uap:ShareTarget>
+        </uap:Extension>
+      </Extensions>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>
